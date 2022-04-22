@@ -96,7 +96,9 @@ About, Quick Links, Contact Information
 
 ## Demo
 
-Insert gif or link to demo
+link to demo:
+
+https://bettysportfolio.netlify.app/
 
 
 ## Contributing
