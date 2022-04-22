@@ -568,7 +568,7 @@
             $mail->send();
             echo "<script>alert('Message has been sent')</script>";
         } catch (Exception $e) {
-            echo "<script>alert('Message could not be sent. Mailer Error: {$mail->ErrorInfo}')</script>";
+            echo "<script>alert('Message could not be sent.')</script>";
         }
 
     }
