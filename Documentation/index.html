@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<title>Documentation | Betty's Portfolio</title>
+<meta name="description" content="Betty's Portfolio-HTML Portfolio Landing Page">
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="Documentation Template"> Documentation</a> 
+		<span class="text-2 ml-2">v1.0</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-dark docs-navigation-dark">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Getting Started</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_installation">Installation</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_html_structure">HTML Structure</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_css">CSS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_logo_settings">Logo Settings</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_layout">Layout</a>
+          <ul class="nav flex-column">
+			<li class="nav-item"><a class="nav-link" href="#idocs_navbar">Navbar</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_sidebar">Sidebar</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_footer">Footer</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_content">Content</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_typography">Typography</a></li>
+			<li class="nav-item"><a class="nav-link" href="#idocs_icons">Icons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_image">Image</a></li>
+          </ul>
+		</li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_components">Components</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_social_icon">Social Icon</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_helper_classes">Helper Classes</a></li>
+          </ul>
+        </li>
+		<li class="nav-item"><a class="nav-link" href="#idocs_faq">FAQ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>Documentation</h1>
+        <h2>Betty's Portfolio-HTML Portfolio Landing Page</h2>
+        <p class="lead">Thank you so much for purchasing this item.</p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>Author:</strong> Mehfam</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">Created:</strong> 16 April, 2022</li>
+					<li><strong>Update:</strong> 22 April, 2022</li>
+				</ul>
+			</div>
+		</div>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- Installation
+		============================ -->
+        <section id="idocs_installation">
+          <h2>Installation</h2>
+          <p class="lead">Follow the steps below to setup your site template:</p>
+          <ol>
+            <li>Unzip the downloaded package and open the <strong>/portfolio</strong> folder to find all the template files. You will need to upload these files to your hosting web server using FTP or localhost in order to use it on your website.</li>
+            <li>Below is the folder structure and needs to be uploaded to your website or localhost root directory:
+            <ul>
+			<li><code>portfolio/assets</code> - Contains all of the assets referenced
+			  <ul>
+                <li><code>portfolio/style</code> - Stylesheet files</li>
+                <li><code>portfolio/assets/images</code> - Images files</li>
+                <li><code>portfolio/js</code> - Javacript files</li>
+                <li><code>portfolio/assets/cv</code> - CV file</li>
+              </ul>
+			</li>
+			<li><code>portfolio/index.html</code> - Homepage
+			</ul>
+            </li>
+            <li>You should upload all or specific HTML files as per your need.</li>
+            <li>You are good to go for adding your content now!</li>
+          </ol>
+        </section>
+        
+		<hr class="divider">
+		
+        <!-- HTML Structure
+		============================ -->
+        <section id="idocs_html_structure">
+          <h2>HTML Structure</h2>
+          <p>This is a basic structure to help you understand the comments of the index.html page in portfolio folder.</p>
+          <pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;!------------------------Title--------------------------&gt;
+&lt;title&gt;Betty's Portfolio &lt;/title&gt;
+&lt;!------------------------CSS File Link--------------------------&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;!------------------------Font-Awesome Link--------------------------&gt;
+&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"&gt;
+&lt;!------------------------ScrollReaveal Link--------------------------&gt;
+&lt;script src="https://unpkg.com/scrollreveal">/script&gt;
+&lt;!------------------------AOS Link--------------------------&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"&gt;
+
+&lt;/head&gt;
+&lt;!-- Sidebar Navigation
+    ============================ --&gt;
+    &lt;aside &gt;
+     .....
+    &lt;/aside&gt;
+&lt;!-- Document Wrapper   
+=============================== --&gt;
+&lt;main&gt; 
+  
+  &lt;!-- Navigation
+  ============================ --&gt;
+  &lt;nav&gt;
+   ......
+  &lt;/nav&gt;
+  &lt;!-- Navigation End --&gt; 
+    
+    &lt;!-- Section Content
+    ============================ --&gt;
+    &lt;div class=&quot;idocs-content&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        .......
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Content end --&gt; 
+  
+  &lt;!-- Footer --&gt;
+  &lt;footer&gt;
+    &lt;div class=&quot;container&quot;&gt; ...... &lt;/div&gt;
+  &lt;/footer&gt;
+  &lt;!-- Footer end --&gt; 
+  
+&lt;/div&gt;
+&lt;!-- Document Wrapper end --&gt; 
+
+&lt;!-- JavaScript --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        
+		<hr class="divider">
+		        
+		<!-- CSS
+		============================ -->
+        <section id="idocs_css">
+          <h2>CSS</h2>
+          <p>We have a CSS <code>.css</code> files in template. If you know how to use CSS you can change css files and compile them as well.
+            You can find css file here - <code>portfolio/style</code></p>
+          <p>Open the <code>portfolio/style.css.</code> and Edit the values according to your needs. If you need more Advanced Setup then you can Edit the Respective File yourself. It is completely at your discretion only to include the Required <code>.css</code> Files you need to minimize the amount of CSS & including only the Styles of the Blocks you need. This can be setup in your <code>style.css</code> File.</p>
+        </section>
+        		
+		<hr class="divider">
+		
+        <!-- Logo Settings
+		============================ -->
+        <section id="idocs_logo_settings">
+          <h2>Logo Settings</h2>
+          <p>The Logo Container can be found in the nav Container - <code>&lt;nav&gt;</code></p>
+          <pre><code class="html">&lt;!-- Logo --&gt; 
+&lt;a class=&quot;brand&quot; href=&quot;#&quot;&gt;
+&lt;!-- Feel free to add your own name or image logo --&gt;
+&lt;/a&gt;
+&lt;!-- Logo End --&gt;
+</code></pre>
+        </section> 
+		<hr class="divider">
+		<!-- Layout
+		============================ -->
+        <section id="idocs_layout">
+          <h2>Layout</h2>
+          <p class="lead mb-5">Documentation and examples for navbar, sidebar, footer</p>
+        </section>
+        <!-- Header
+		============================ -->
+        <section id="idocs_navbar">
+          <h2>Navbar</h2>
+          <p>This is how our navbar looks like:</p>
+          <p><a class="popup-img" href="assets/images/header.png"><img class="img-fluid border" src="assets/images/header.png" alt=""></a></p>
+          <pre><code class="html">&lt;!-- Navbar
+============================ --&gt;
+&lt;nav&gt; 
+  &lt;!-- Navbar --&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div&gt; 
+      .....
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!-- Divs End --&gt; 
+&lt;/nav&gt;
+&lt;!-- Navbar End --&gt;
+</code></pre>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Sidebar
+		============================ -->
+        <section id="idocs_sidebar">
+          <h2>Sidebar</h2>
+          <p class="lead">I have built fixed sidebar navigation for layout. which is automatically update navigation based on the menu item you clicked. Click the Hamburger to check out the menu.</p>
+		
+		<h4>Sidebar:</h4>
+        <p>See below image and code for more inforamtion.</p>
+		
+		<div class="row">
+		   <div class="col-lg-6">
+			<p><a class="popup-img" href="assets/images/Sidebar.PNG"><img class="img-fluid border" src="assets/images/Sidebar.PNG" alt=""></a></p>
+		   </div>
+		</div>
+		
+		<pre><code>&lt;!-- Sidebar Navigation
+============================ --&gt;
+&lt;aside&gt;
+  ....
+&lt;/aside&gt;</code></pre>
+
+		</section>
+		
+		<hr class="divider">
+		
+        <!-- Footer
+		============================ -->
+        <section id="idocs_footer">
+          <h2>Footer</h2>
+          <p>See below code for more inforamtion.</p>
+          <pre><code class="html">&lt;!-- Footer
+============================================= --&gt;
+  &lt;footer&gt;
+    &lt;div&gt;
+    	..........
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;!-- Footer end --&gt;</code></pre>
+        </section>
+        
+		<hr class="divider">		
+		<!-- Content
+		============================ -->
+        <section id="idocs_content">
+          <h2>Content</h2>
+          <p class="lead mb-5">Documentation and examples for displaying typography, code, table, image and video and more..</p>
+        </section>
+		  
+		<!-- Typography
+		============================ -->
+		<section id="idocs_typography">
+		  <h2>Typography</h2>
+		  <p class="text-4">Documentation and examples for typography, headings, body text, lists, and more.</p>
+		  <h3>Headings</h3>
+		  <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Heading</th>
+                      <th>Example</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
+                      <td><h1>h1. Heading</h1></td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+                      <td><h2>h2. Heading</h2></td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
+                      <td><h3>h3. Heading</h3></td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
+                      <td><h4>h4. Heading</h4></td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
+                      <td><h5>h5. Heading</h5></td>
+                    </tr>
+                    <tr>
+                      <td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
+                      <td><h6>h6. Heading</h6></td>
+                    </tr>
+                  </tbody>
+                </table>
+		</section>
+		
+		<hr class="divider">
+		
+		<!-- Icons
+		============================ -->
+        <section id="idocs_icons">
+          <h2>Icons</h2>
+          <p><strong>Font Awesome</strong> icon sets are used in this.</p>
+		  
+          <pre><code class="html">
+&lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fas fa-linkedin&quot;&gt;&lt;/i&gt;
+&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;
+</code></pre>
+<p><span class="badge badge-danger text-uppercase mr-2">Note</span>Please go to their official documentation pages for a full list of icons: <a class="btn btn-primary" target="_blank" href="https://fontawesome.com/icons"><i class="fas fa-external-link-alt mr-1"></i> Font Awesome</a></p>
+        </section>
+		
+		<hr class="divider">
+		
+		<!-- Image
+		============================ -->
+        <section id="idocs_image">
+          <h2>Image</h2>
+          <p class="text-4">Documentation and examples for opting images into responsive behavior and add styles to them—all via classes.</p> 
+          
+		  <h3 class="mt-5">Responsive Images</h3>
+		  <p><img src="assets/images/image.png" class="img-fluid" alt="Responsive image"></p>
+          <pre><code class="html">&lt;img src=&quot;assets/images/image.png&quot; class=&quot;img-fluid&quot; alt=&quot;Responsive image&quot;&gt;</code></pre>
+		  
+        </section>
+		
+		<hr class="divider">
+		
+        <!-- Components
+		============================ -->
+        <section id="idocs_components">
+          <h2>Components</h2>
+          <p class="mb-5">Setting up components is very easy. Here is the Some of shortcodes described.</p>
+        </section>
+		          
+		  <hr class="divider">
+		  		  
+          <!-- Social Icon
+		  ============================ -->
+		  <section id="idocs_social_icon">
+            <h3>Social Icon</h3>
+            <p>Social links used: Feel Free to Add your Own.</p>
+            <pre><code class="html">&lt;div class=&quot;d-flex flex-column&quot;&gt;
+  &lt;ul class=&quot;social&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.facebook.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Facebook&quot;&gt;&lt;i class=&quot;fab fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.linkedin.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;Linkedin&quot;&gt;&lt;i class=&quot;fab fa-linkedin-in&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://www.github.com/&quot; target=&quot;_blank&quot; title=&quot;&quot; data-original-title=&quot;GitHub&quot;&gt;&lt;i class=&quot;fab fa-github&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+          </section>
+		  
+		  <hr class="divider">
+		  
+		  <!-- Helper Classes
+		  ============================ -->
+          <section id="idocs_helper_classes">
+            <h3>Helper Classes</h3>
+			            
+			<h5>Text Size:</h5>
+            <ul>
+              <li><code>--p</code> - Changes the Font size to 1rem.</li>
+              <li><code>--a</code> - Changes the Font size to 1rem.</li>
+              <li><code>--h1</code> - Changes the Font size to 2.5rem.</li>
+              <li><code>--h2</code> - Changes the Font size to 2rem.</li>
+              <li><code>--h3</code> - Changes the Font size to 1.5rem.</li>
+            </ul>
+            <h5>Background Color:</h5>
+            <ul>
+              <li><code>--primary</code> - Changes the background color to white(#fff).</li>
+              <li><code>--secondary</code> - Changes the background color to light grey( #a2a2a2).</li>
+              <li><code>--accent</code> - Changes the background color to light purple(hsl(257, 100%, 60%))</li>
+              <li><code>--accent2</code> -  Changes the background color to dark purple(hsl(257, 23%, 24%))</li>
+            </ul>
+            <h5>Box Shadow</h5>
+            <ul>
+              <li><code>--box-shadow</code> -For Regular shadow to elements with box-shadow utilities.( 0 0 12px hsl(0, 0%, 0%)) </li>
+            </ul>
+            <h5>Text Shadow</h5>
+            <ul>
+              <li><code>--text-shadow</code> -For Regular shadow to elements with text-shadow utilities.( 0 3px 0 rgba(255, 255, 255, 0.3)) </li>
+            </ul>
+            <h5>Borders, Sizing, Spacing (margin & padding) and also much more....</h5>
+          </section>
+        
+        
+		<hr class="divider">
+		
+		<!-- FAQ
+		============================ -->
+		<section id="idocs_faq">
+          <h2>FAQ</h2>
+          <p class="text-4">A FAQ is a list of frequently asked questions (FAQs) and answers on a particular topic.</p>
+          
+		  <div class="row">
+          <div class="col-lg-12">
+            <div class="accordion accordion-alterate arrow-right" id="popularTopics">
+              <div class="card">
+                <div class="card-header" id="heading4">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">I'm not sure if my use is covered. What should I do?</a> </h5>
+                </div>
+                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#popularTopics">
+                  <div class="card-body"> I have tried to cover every need possible that i could think of for the portfolio. I am sure if you are purchasing it, you believe it to be the best for you!</div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading6">
+                  <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">Am I allowed to modify the item that I purchased?</a> </h5>
+                </div>
+                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#popularTopics">
+                  <div class="card-body"> Yes, you are allowed to modify this item as much as you please</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </section>
+        
+		<hr class="divider">
+        
+        <!-- Source & Credits
+		============================ -->
+        <section id="idocs_source_credits">
+          <h2>Source & Credits</h2>
+          <h4>Images:</h4>
+          <ul>
+            <li>Pexels - <a target="_blank" href="https://pexels.com/">https://pexels.com/</a></li>
+          </ul>
+		  <h4>Fonts:</h4>
+          <ul>
+            <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+          </ul>
+          <h4>Scripts:</h4>
+          <ul>
+            <li>ScrollReveal - <a target="_blank" href="https://unpkg.com/scrollreveal/">https://unpkg.com/scrollreveal/</a></li>
+			<li>Rellax Js - <a target="_blank" href="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js">https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js</a></li>
+			<li>AOS - <a target="_blank" href="https://unpkg.com/aos@2.3.1/dist/aos.js">https://unpkg.com/aos@2.3.1/dist/aos.js/</a></li>
+          </ul>
+        </section>
+        
+		
+		<hr class="divider">
+		
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="Dribbble"><i class="fab fa-dribbble"></i></a></li>
+        <li><a data-toggle="tooltip" href="#" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+      <p class="text-center">Copyright &copy; 2022 Mehfam</a>. All Rights Reserved.</p>
+	  <p class="text-2 text-center mb-0">Design &amp; Develop by Mehfam</a>.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
