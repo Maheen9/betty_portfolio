@@ -441,14 +441,15 @@
                     <br>
                     <h1>contact me</h1>
                     <div class="contact_form" method="post">
-                        <form action="mail.php" method="post">
+                        <h4 class="sent_notif"></h4>
+                        <form action="mail.php" method="post" id="myform">
                             <div class="name">
-                                <input type="text" class="first_name" required placeholder="first name" name="first_name">
-                                <input type="text" class="last_name" required placeholder="last name" name="last_name">
+                                <input type="text" class="first_name" required placeholder="first name" name="first_name" id="first_name">
+                                <input type="text" class="last_name" required placeholder="last name" name="last_name" id="last_name">
                             </div>
-                            <input type="email" required class="email" placeholder="email" name="email">
-                            <textarea  class="message" placeholder="Your Message" required name="message"></textarea>
-                            <button type="submit" class="btn contact_btn" name="submit">Contact</button>
+                            <input type="email" required class="email" placeholder="email" name="email" id="email">
+                            <textarea  class="message" placeholder="Your Message" required name="message" id="message"></textarea>
+                            <button type="submit" class="btn contact_btn" name="submit" onclick="mail()">Contact</button>
                         </form>
                     </div>
                 </section>
@@ -540,6 +541,42 @@
     <script>
         //initiate AOS
         AOS.init();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        function mail(){
+            var fname= $("#first_name");
+            var lname= $("#last_name");
+            var email= $("#email");
+            var msg= $("#message");
+
+            if(isNotEmpty(fname) && isNotEmpty(email) && isNotEmpty(lname) && isNotEmpty(msg)){
+                $.ajax({
+                    url: 'mail.php',
+                    method: 'POST',
+                    dataType: 'json',
+                    data:{
+                        fname: fname.val(),
+                        lname: lname.val(),
+                        email: email.val(),
+                        msg: msg.val()
+                    }, success: function(response){
+                        $('#myform')[0].reset();
+                        $('.sent_notif').text("Message sent");
+                    }
+                });
+            }
+        }
+        function isNotEmpty(caller){
+            if(caller.val()==""){
+                caller.css('border','1px solid red');
+                return false;
+            }
+            else{
+                caller.css('border', '');
+                return true;
+            }
+        }
     </script>
 </body>
 </html>
