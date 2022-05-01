@@ -525,56 +525,6 @@
             </div>
         </div>
     </footer>
-    <?php
-
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\SMTP;
-    use PHPMailer\PHPMailer\Exception;
-    
-    require('./assets/phpmailer/Exception.php');
-    require('./assets/phpmailer/SMTP.php');
-    require('./assets/phpmailer/PHPMailer.php');
-    
-    
-    if(isset($_POST['submit']))
-    {
-        $fname=$_POST['first_name'];
-        $lname=$_POST['last_name'];
-        $email=$_POST['email'];
-        $msg=$_POST['message'];
-    
-        //Create an instance; passing `true` enables exceptions
-        $mail = new PHPMailer(true);
-    
-        try {
-            //Server settings
-            $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-            $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'trialaccn911@gmail.com';                     //SMTP username
-            $mail->Password   = 'shadbad911';                               //SMTP password
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-            $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-        
-            //Recipients
-            $mail->setFrom('trialaccn911@gmail.com');
-            $mail->addAddress('trialaccn911@gmail.com');     //Add a recipient
-        
-            //Content
-            $mail->isHTML(true);                                  //Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = "First Name: $fname<br> Last Name: $lname<br> Email: $email<br> Message: $msg";
-        
-            $mail->send();
-            echo "<script>alert('Message has been sent')</script>";
-        } catch (Exception $e) {
-            echo "<script>alert('Message could not be sent.')</script>";
-        }
-    
-    }
-    ?>
-    
-
     <!--------------------Script Section------------------------>
     <script src="script.js"></script>
     <!--------------------ScrollReveal Link------------------------>
