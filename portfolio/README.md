@@ -10,7 +10,7 @@ Its a portfolio template for Developers and Programmers etc.
 - Easy Setup
 - Cool Animations
 - Clean and Commented code
-- Working Contact Form
+- Contact Form with Validation
 - Fullscreen mode
 - Cross Browser Compatible
 - Multiple Sections

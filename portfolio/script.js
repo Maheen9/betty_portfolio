@@ -64,28 +64,3 @@ function toggleSkills(){
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
 })
-// contact
-const contactbtn=document.querySelector(".contact_btn");
-const firstName=document.querySelector(".first_name");
-const lastName=document.querySelector(".last_name");
-const email=document.querySelector(".email");
-const msg=document.querySelector(".message");
-
-contactbtn.addEventListener('click', ()=>{
-    if(firstName.value.length && lastName.value.length && email.value.length && msg.value.length){
-        fetch('/mail', {
-            method: 'post',
-            headers: new Headers({'Content-Type': 'application/json'}),
-            body: JSON.stringify({
-                firstname: firstName.value,
-                lastname: lastName.value,
-                email: email.value,
-                msg: msg.value,
-            })
-        })
-        .then(res => res.json())
-        .then(data => {
-            alert(data)
-        })
-    }
-})
